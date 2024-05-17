@@ -1,0 +1,88 @@
+body {
+    font-size: 26px;
+    background: black url('../img/Dragao.png');
+    font-family: Roboto, sans-serif;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #303f81; /* Cor de fundo */
+    height: 60px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.4s ease;
+}
+
+.menu li a:hover {
+    color: #28e3fc; /* Mudar cor ao passar o mouse */
+}
+
+.container {
+    background-color: #fff;
+    margin: 24px;
+    max-width: 700px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.title-form {
+    background-color: #303f81;
+    padding: 24px;
+    text-align: center;
+    color: #fff;
+}
+
+.form {
+    padding: 24px;
+}
+
+.form-content {
+    padding-bottom: 24px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 80%;
+    height: 40px;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #dfdfdf;
+    font-size: 24px;
+}
+
+button {
+    background-color: #303f81;
+    color: #fff;
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px;
+    border: 0;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 14px;
+}
+
+button:hover {
+    background-color: rgb(38, 193, 240);
+}
+
+button:active {
+    background-color: red;
+}

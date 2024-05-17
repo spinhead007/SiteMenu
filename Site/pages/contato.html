@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../assets/css/contato.css" />
+
+    <title>Fale Comigo</title>
+  </head>
+  <body>
+    <div class="header-container">
+      <ul class="menu">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </div>
+   
+    <div class="container">
+      <section class="title-form">
+        <h2>Preencha o formulário</h2>
+      </section>
+
+      <form id="form" class="form">
+        <div class="form-content">
+          <label for="username">Nome</label>
+          <input type="text" id="username" placeholder="Digite aqui seu nome" />
+        </div>
+
+        <div class="form-content">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="Digite aqui seu email" />
+        </div>
+
+        <div class="form-content">
+          <label for="password">Senha</label>
+          <input type="password" id="password" placeholder="**********" />
+          <button type="button" onclick="togglePasswordVisibility()">Mostrar Senha</button>
+        </div>
+
+        <div class="form-content">
+          <label for="checkbox">Marque se concorda</label>
+          <input type="checkbox" id="checkbox"/>
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+    
+    <script src="../assets/scripts/script.js"></script>
+    <script>
+      function togglePasswordVisibility() {
+        var passwordInput = document.getElementById("password");
+        if (passwordInput.type === "password") {
+          passwordInput.type = "text";
+        } else {
+          passwordInput.type = "password";
+        }
+      }
+    </script>
+  </body>
+</html>
